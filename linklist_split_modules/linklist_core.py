@@ -2595,6 +2595,11 @@ print(f"Sum: {calculate_sum_circular(cll.head)}")  # Output: 60
                 st.write(f"Count: {len(numbers)}")
                 
                 # Show step-by-step calculation
-                with st.expander("Step-by-step calculation"):
-    # temporary placeholder so the file isn't syntactically broken
-    pass
+  with st.expander("Step-by-step calculation"):
+    # show each number and the running total
+    running_total = 0
+    for idx, n in enumerate(numbers, start=1):
+        running_total += n
+        st.write(f"{idx}. {n} → running total: {running_total}")
+    st.markdown("**Finished step-by-step calculation.**")
+
