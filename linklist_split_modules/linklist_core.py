@@ -2596,3 +2596,5 @@ print(f"Sum: {calculate_sum_circular(cll.head)}")  # Output: 60
                 
                 # Show step-by-step calculation
                 with st.expander("Step-by-step calculation"):
+    # temporary placeholder so the file isn't syntactically broken
+    pass
